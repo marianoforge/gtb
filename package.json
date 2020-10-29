@@ -1,0 +1,27 @@
+{
+  "name": "gtb-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "next": "9.5.5",
+    "react": "17.0.0",
+    "react-dom": "17.0.0",
+    "react-hook-form": "^6.9.6",
+    "react-media": "^1.10.0",
+    "react-paginate": "^6.5.0",
+    "sass": "^1.27.0",
+    "write-json-file": "^4.3.0"
+  },
+  "devDependencies": {
+    "babel-plugin-inline-react-svg": "^1.1.1",
+    "file-loader": "^6.1.1",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.9.5"
+  }
+}
