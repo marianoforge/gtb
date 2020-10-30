@@ -20,7 +20,7 @@ const prueba = () => {
   };
   return (
     <div>
-      <div className="lg:flex lg:flex-row mt-10 lg:mt-0 ml-6 lg:ml-0">
+      <div className="flex flex-wrap">
         <CompServicio
           backSquare={backSquare}
           title="CREA TU USUARIO"
@@ -89,7 +89,7 @@ const prueba = () => {
           }
         />
       </div>
-      <div className="lg:flex lg:flex-row lg:justify-center lg:mt-16 ml-6 lg:ml-0">
+      <div className="flex flex-wrap lg:justify-center">
         <CompServicio
           backSquare={backSquare4}
           title="TU PAQUETE ESTÁ LISTO"

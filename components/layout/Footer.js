@@ -3,14 +3,22 @@ import GTBLogo from "../../public/images/gtblogo.svg";
 
 const Footer = () => {
   return (
-    <footer className="flex lg:flex-row flex-col items-center justify-around w-full bg-herobutton2 h-auto py-10">
-      <div className="lg:w-1/3 w-1/4">
-        <GTBLogo />
-      </div>
-      <div className="text-white mt-6 lg:mt-0">
-        <p className="font-light">© Global Trade Box 2020. Copyright.</p>
-        <p className="mt-2 font-light">Term and Conditions | Privacy | Help</p>
-      </div>
+    <footer className="bg-herobutton2 h-auto py-10">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-wrap items-center justify-around">
+          <div className="lg:w-6/12 w-full mb-4 lg:mb-0">
+            <GTBLogo />
+          </div>
+          <div className="text-white lg:w-6/12 w-full text-sm">
+            <p className="font-light mb-2 text-left lg:text-right">© Global Trade Box 2020. Copyright.</p>
+            <p className="font-light text-left lg:text-right">
+              <a href="#" className="pr-3">Term and Conditions</a> |
+              <a href="#" className="px-3">Privacy</a> |
+              <a href="#" className="pl-3">Help</a>
+              </p>
+            </div>
+          </div>
+        </div>
     </footer>
   );
 };

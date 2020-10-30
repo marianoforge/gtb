@@ -6,29 +6,26 @@ const Servicios = () => {
     <div>
       <section
         id="servicios"
-        className=" flex flex-row  h-auto lg:pb-32 pb-16 lg:ml-32 bg-white"
+        className="h-auto lg:pt-32 lg:pb-16 pb-8 pt-16"
       >
-        <div className="lg:w-full lg:mt-8">
-          <div className="flex flex-row lg:justify-center lg:w-full">
-            <div className="bg-herobutton2 lg:w-3 w-2 h-8 lg:h-10 lg:-ml-24 ml-6 mt-16"></div>
-            <h3 className="ml-2 text-3xl lg:text-4xl font-semibold leading-tight mt-16">
+        <div className="container mx-auto px-4">
+          <div className="lg:text-center">
+            <h3 className="title-line text-3xl lg:text-4xl font-semibold leading-none mb-8 inline-block">
               Servicio
-            </h3>
-          </div>
-          <div className="mt-4 ml-6 mr-6 lg:w-11/12 lg:flex lg:mt-6 lg:flex-coulmn lg:-ml-8 lg:justify-around">
-            <p className="font-light text-bodytext text-lg lg:mt-3 lg:text-xl lg:w-5/12">
+            </h3> 
+          </div> 
+          <div className="flex flex-wrap mb-6 lg:mb-10">
+            <p className="font-light text-bodytext text-base lg:text-lg lg:w-6/12 mb-4 lg:pr-3">
               Ofrecemos servicio de almacenamiento, servicio puerta a puerta
               para empresas y particulares.
             </p>
-            <p className="font-light text-bodytext text-lg lg:text-xl mt-5 lg:mt-3 lg:mr-4 lg:w-5/12">
+            <p className="font-light text-bodytext text-base lg:text-lg lg:w-6/12 mb-4 lg:pl-3">
               Brindamos soluciones a medida de logística nacional e
               internacional. Envío y recepción de paquetería de todo tipo,
               tamaño y peso.
             </p>
           </div>
-          <div className="lg:mt-16">
             <ComponentesServicio />
-          </div>
         </div>
       </section>
     </div>

@@ -9,19 +9,18 @@ const Contacto = () => {
   };
 
   return (
-    <section id="contacto" className="h-auto lg:pb-32 pb-16 bg-white">
-      <div className="lg:w-full lg:mt-8">
-        <div className="flex flex-row lg:justify-center items-center lg:w-full mt-12">
-          <div className="bg-herobutton2 lg:w-3 w-2 h-16 lg:h-10 lg:-ml-24 ml-3 "></div>
-          <h3 className="ml-2 text-3xl lg:text-4xl font-semibold leading-tight ">
+    <section id="contacto" className="h-auto lg:py-32 py-16">
+      <div className="container mx-auto px-4"> 
+      <div className="lg:text-center">
+          <h3 className="title-line text-3xl lg:text-4xl font-semibold leading-none mb-8 inline-block">
             Formulario de Contacto
-          </h3>
+          </h3> 
+        </div>  
+        <div className="flex flex-wrap">
+          <Form onSubmit={sendForm} />
+          <SocialMedia />
+          </div>
         </div>
-      </div>
-      <div className="lg:flex lg:flex-row justify-center lg:mt-8 mt-4 w-full">
-        <Form onSubmit={sendForm} />
-        <SocialMedia />
-      </div>
     </section>
   );
 };

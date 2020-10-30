@@ -6,12 +6,12 @@ const Form = ({ onSubmit }) => {
   const emailVal = /^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$/;
 
   return (
-    <div className="lg:w-7/12 w-11/12 ml-3">
+    <div className="lg:w-8/12 w-full mb-8 lg:mb-0">
       <form onSubmit={handleSubmit(onSubmit)} className="w-full ">
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
-              className="block uppercase tracking-wide text-bodytext text-xs mb-2"
+              className="block uppercase tracking-wide text-bodytext text-xs"
               htmlFor="name"
             ></label>
             <input
@@ -32,7 +32,7 @@ const Form = ({ onSubmit }) => {
           </div>
           <div className="w-full md:w-1/2 px-3">
             <label
-              className="block uppercase tracking-wide text-bodytext text-xs mb-2"
+              className="block uppercase tracking-wide text-bodytext text-xs"
               htmlFor="phone"
             ></label>
             <input
@@ -55,7 +55,7 @@ const Form = ({ onSubmit }) => {
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
-              className="block uppercase tracking-wide text-bodytext text-xs mb-2"
+              className="block uppercase tracking-wide text-bodytext text-xs"
               htmlFor="email"
             ></label>
             <input
@@ -79,7 +79,7 @@ const Form = ({ onSubmit }) => {
           </div>
           <div className="w-full md:w-1/2 px-3">
             <label
-              className="block uppercase tracking-wide text-bodytext text-xs mb-2"
+              className="block uppercase tracking-wide text-bodytext text-xs"
               htmlFor="asunto"
             ></label>
             <input
@@ -102,7 +102,7 @@ const Form = ({ onSubmit }) => {
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full px-3">
             <label
-              className="block uppercase tracking-wide text-bodytext text-xs mb-2"
+              className="block uppercase tracking-wide text-bodytext text-xs"
               htmlFor="message"
             ></label>
             <textarea
@@ -127,10 +127,10 @@ const Form = ({ onSubmit }) => {
           <div className="md:w-1/3"></div>
           <div className="md:w-2/3">
             <button
-              className="flex flex-row items-center justify-center h-12 lg:w-40 w-full shadow bg-mbutton hover:bg-orange-600 focus:shadow-outline focus:outline-none text-white font-semibold lg:font-normal py-6 px-4 rounded-full"
+              className="flex flex-row items-center justify-center lg:text-lg w-full lg:w-auto bg-mbutton hover:bg-orange-600 focus:shadow-outline focus:outline-none text-white font-bold py-4 px-10 rounded-full"
               type="submit"
             >
-              <span className="ml-2">ENVIAR</span>
+              ENVIAR
               <svg
                 className="w-5 ml-3"
                 fill="none"

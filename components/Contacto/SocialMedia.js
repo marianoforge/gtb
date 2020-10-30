@@ -2,49 +2,39 @@ import React from "react";
 
 const SocialMedia = () => {
   return (
-    <div className="lg:ml-8 ml-4  mt-10 lg:mt-2">
-      <div className="w-48">
-        <div className="flex flex-row items-center">
-          <div className="bg-herobutton2 w-2 h-5 lg:h-6"></div>
-          <h3 className="ml-2 text-xl lg:text-2xl font-semibold leading-tight">
+    <div className="lg:pl-8 ml-0 lg:w-4/12 w-full">
+          <h3 className="text-xl lg:text-2xl font-semibold leading-tight mb-4">
             Seguinos en:
           </h3>
-        </div>
-        <div className="flex flex-row flex-start ">
-          <div>
-            <img className="w-6 mt-6" src="/facebook.png" alt="Facebook" />
-          </div>
-          <div>
-            <img className="w-6 mt-6 ml-6" src="/twitter.png" alt="Twitter" />
-          </div>
-          <div>
-            <img className="w-6 mt-6 ml-6" src="/youtube.png" alt="Youtube" />
-          </div>
-          <div>
+        <div className="flex flex-row lg:mb-24 mb-16 items-center">
+          <a href="#" className="mr-6">
+            <img className="w-6" src="/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="#" className="mr-6">
+            <img className="w-6" src="/twitter.svg" alt="Twitter" />
+          </a>
+          <a href="#" className="mr-6">
+            <img className="w-6" src="/youtube.svg" alt="Youtube" />
+          </a>
+          <a href="#" className="mr-6">
             <img
-              className="w-6 mt-6 ml-6"
-              src="/instagram.png"
+              className="w-6"
+              src="/instagram.svg"
               alt="Instagram"
             />
-          </div>
+          </a>
         </div>
-      </div>
-      <div className="w-48 lg:mt-24 mt-16">
-        <div className="flex flex-row items-center">
-          <div className="bg-herobutton2 w-2 h-5 lg:h-6"></div>
-          <h3 className="ml-2 text-xl lg:text-2xl font-semibold leading-tight">
-            Contacto:
-          </h3>
-        </div>
-        <div className="mt-4">
-          <p className="text-light lg:text-lg text-herobutton2">
+        <h3 className="text-xl lg:text-2xl font-semibold leading-tight mb-4">
+          Contacto:
+        </h3>
+        <p className="mb-4">
+          <a href="mailto:info@globaltradebox.com" className="text-light lg:text-lg text-herobutton2">
             info@globaltradebox.com
-          </p>
-        </div>
-        <div className="mt-4">
-          <p className="text-light text-lg text-dark">Tel: +54 (11) 123 4567</p>
-        </div>
-      </div>
+          </a>
+        </p>
+        <p>
+          <a href="tel://54111234567" className="text-light text-lg text-dark">Tel: +54 (11) 123 4567</a>
+        </p>
     </div>
   );
 };

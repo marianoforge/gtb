@@ -1,5 +1,6 @@
 import Head from "next/head";
 
+import Menu from "../components/layout/Menu";
 import Hero from "../components/Hero";
 import Tiendas from "../components/Tiendas";
 import Nosotros from "../components/Nosotros";
@@ -12,9 +13,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Global Trade Box</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Menu />
       <Hero />
       <Tiendas />
       <Nosotros />

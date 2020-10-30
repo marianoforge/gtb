@@ -4,23 +4,27 @@ const Tarifas = () => {
   return (
     <section
       id="tarifas"
-      className=" flex flex-row mt-16 h-auto lg:pb-32 pb-16 bg-sectiongray"
+      className="bg-sectiongray"
     >
-      <div className="lg:w-5/12 lg:mt-16">
-        <div className="flex flex-row">
-          <div className="bg-herobutton2 lg:w-3 w-2 h-8 ml-6 mt-16"></div>
-          <h3 className="ml-2 text-3xl font-semibold leading-tight mt-16">
-            Tarifas
-          </h3>
+      <div className="container mx-auto px-4">
+        <div className="flex flex-wrap lg:py-32 py-16 items-center">
+          <div className="w-full lg:w-6/12 lg:pr-3">           
+            <h3 className="title-line text-3xl lg:text-4xl font-semibold leading-none mb-4">
+              Tarifas
+            </h3>
+            <p className="font-light text-bodytext text-lg lg:mb-0 mb-8">
+              Dede la calculadora podrás obtener un número estimativo de los
+              costos de envío de tus paquetes. Deberás tener en cuenta lo
+              siguiente:
+            </p>
+          </div>
+          <div className="w-full lg:w-6/12 lg:pl-3">   
+            <div className="p-6 bg-white rounded-lg shadow-2xl">
+              Aqui va la calculadora
+            </div>
+            </div>
+          </div>
         </div>
-        <div className="mt-4 ml-6 mr-8 lg:w-9/12">
-          <p className="font-light text-bodytext text-lg">
-            Dede la calculadora podrás obtener un número estimativo de los
-            costos de envío de tus paquetes. Deberás tener en cuenta lo
-            siguiente:
-          </p>
-        </div>
-      </div>
     </section>
   );
 };
