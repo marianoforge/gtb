@@ -22,17 +22,17 @@ const Layout = () => {
                 </Link>
               </li>
               <li className="px-4">
-                <Link href="#nosotros">
+                <Link href="./#nosotros">
                   <a>Nosotros</a>
                 </Link>
               </li>
               <li className="px-4">
-                <Link href="#tarifas">
+                <Link href="./#tarifas">
                   <a>Tarifas</a>
                 </Link>
               </li>
               <li className="px-4">
-                <Link href="#servicios">
+                <Link href="./#servicios">
                   <a>Servicios</a>
                 </Link>
               </li>
@@ -41,8 +41,8 @@ const Layout = () => {
                   <a>Novedades</a>
                 </Link>
               </li>
-              <li className="bg-mbutton hover:bg-orange-600 text-white font-bold px-5 py-3 rounded-full">
-                <Link href="#contacto">
+              <li className="bg-mbutton hover:bg-orange-600 text-white font-bold px-5 py-3 rounded-full transition-all duration-300">
+                <Link href="./#contacto">
                   <a>Contacto</a>
                 </Link>
               </li>

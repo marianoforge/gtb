@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 
+import Menu from "../../components/layout/Menu";
 import Header from "../../components/Novedades/Header";
 import Footer from "../../components/layout/Footer";
 
@@ -16,30 +17,29 @@ const Novedades = ({ allPosts: { edges } }) => (
       <title>Global Trade Box - Novedades</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <Header />
-    <main className="flex flex-col items-center mt-12">
-      <h1 className="lg:text-4xl text-2xl mr-1 mb-6">Últimas Novedades</h1>
-      <hr />
-      <section className="lg:w-2/4 w-10/12 mb-10">
+    <Menu />
+    <Header title="Últimas Novedades" />
+    <main className="container mx-auto px-4 py-8 lg:py-16">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
         {edges.map(({ node }) => (
-          <div key={node.id} className="mb-8">
+          <div key={node.id} className="shadow-xl rounded-2xl">
             <div>
-              <figure className="mb-4">
-                <img src={node.featuredImage.node.sourceUrl} alt={node.title} />
+              <figure>
+                <img src={node.featuredImage.node.sourceUrl} alt={node.title} className="rounded-t-2xl" />
               </figure>
             </div>
-            <div className="flex lg:block flex-col items-center mb-6">
-              <h2 className="text-xl mb-2">{node.title}</h2>
-              <p className="font-light mb-3 w-full">{node.excerpt}</p>
-
+            <div className="flex lg:block flex-col items-center p-6">
+              <h2 className="text-xl font-semibold mb-2 text-center">{node.title}</h2>
+              <div className="font-light mb-6 w-full" dangerouslySetInnerHTML={{ __html: node.excerpt }}></div>
+              <p className="text-center">
               <Link href={`/novedades/${node.slug}`}>
-                <a className="underline">Read more</a>
-              </Link>
+                <a className="bg-primary hover:bg-mbutton inline-block text-white text-sm px-3 py-1 rounded-full transition-all duration-300">Read more</a>
+                </Link>
+                </p>
             </div>
-            <hr />
           </div>
         ))}
-      </section>
+      </div>
     </main>
     <Footer />
   </div>

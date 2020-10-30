@@ -14,7 +14,7 @@
 }
 
 /* Position the navbar container inside the image */
-.container {
+.mask {
   position: absolute;
   width: 100%;
   height: 100%;

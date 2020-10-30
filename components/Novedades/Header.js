@@ -1,33 +1,22 @@
 import React from "react";
-import Media from "react-media";
-import Menu from "../layout/Menu";
-import MenuMobile from "../layout/MenuMobile";
 
 import styles from "../../styles/Header.module.css";
 
-const Header = () => {
+const Header = ({title}) => {
   return (
-    <div className={styles.bgImg}>
-      <div className={styles.container}>
-        <div className={styles.topnav}>
-          <Media
-            queries={{
-              small: "(max-width: 599px)",
-              medium: "(min-width: 600px) and (max-width: 1199px)",
-              large: "(min-width: 1200px)",
-            }}
-          >
-            {(matches) => (
-              <>
-                {matches.small && <MenuMobile />}
-                {matches.medium && <MenuMobile />}
-                {matches.large && <Menu />}
-              </>
-            )}
-          </Media>
+    <div>
+      <div className={styles.bgImg}>
+        <div className={styles.mask}>
+            <div className="container mx-auto px-4 relative h-full flex flex-col justify-center">
+              <div className="w-full pt-16">
+                <h2 className="text-2xl lg:text-4xl text-white leading-none lg:leading-tight font-semibold mb-2 text-center">
+                  {title}
+                </h2>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      </div>
   );
 };
 

@@ -53,16 +53,22 @@ body {
 }
 
 /*HGROUP*/
-.title-line{
+.title-line {
     position: relative;
     padding-left: 32px;
 }
+
 .title-line:before {
     content: "";
-    position:absolute;
+    position: absolute;
     left: 0px;
     width: 16px;
     height: 100%;
     background-color: #0D53F7;
     margin-right: 16px;
+}
+
+/*BG*/
+.bg-primary {
+    background-color: #0D53F7;
 }
