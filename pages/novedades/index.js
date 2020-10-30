@@ -29,7 +29,7 @@ const Novedades = ({ allPosts: { edges } }) => (
               </figure>
             </div>
             <div className="flex lg:block flex-col items-center p-6">
-              <h2 className="text-xl font-semibold mb-2 text-center">{node.title}</h2>
+              <h2 className="text-2xl font-semibold mb-2 text-center">{node.title}</h2>
               <div className="font-light mb-6 w-full" dangerouslySetInnerHTML={{ __html: node.excerpt }}></div>
               <p className="text-center">
               <Link href={`/novedades/${node.slug}`}>
