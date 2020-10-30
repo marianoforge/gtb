@@ -72,3 +72,31 @@ body {
 .bg-primary {
     background-color: #0D53F7;
 }
+
+/*MENU*/
+#header #hamburgerbtn .icn {
+    position: absolute;
+    opacity: 0;
+    transition: all 300ms;
+}
+
+#header #hamburgerbtn .icn.icn-hamb {
+    opacity: 1;
+}
+
+#header.active #hamburgerbtn{
+    position: fixed;
+    top: 29px;
+    right: 16px;
+}
+#header.active #hamburgerbtn .icn.icn-hamb {
+    opacity: 0;
+}
+
+#header.active #hamburgerbtn .icn.icn-close {
+    opacity: 1;
+}
+
+#header.active #navMenu {
+    display: flex;
+}
