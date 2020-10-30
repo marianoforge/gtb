@@ -86,7 +86,7 @@ body {
 
 #header.active #hamburgerbtn{
     position: fixed;
-    top: 29px;
+    top: 32px;
     right: 16px;
 }
 #header.active #hamburgerbtn .icn.icn-hamb {
