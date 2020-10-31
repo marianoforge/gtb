@@ -12,6 +12,11 @@
     position: relative;
 }
 
+@media (max-width: 768px) {
+    .bgImg {
+		background-image: url("/images/hero-mobile.jpg");
+    }
+}
 /* Position the navbar container inside the image */
 .mask {
     position: absolute;
