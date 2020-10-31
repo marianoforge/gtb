@@ -13,11 +13,11 @@ const Hero = () => {
             <h1 className="text-4xl lg:text-6xl text-white leading-none lg:leading-tight font-semibold mb-2">
               Compra en Estados Unidos sin moverte de tu casa.
             </h1>
-            <h3 className="text-base lg:text-xl text-white leading-relaxed font-light mb-4 lg:mb-8">
+            <h2 className="text-base lg:text-xl text-white leading-relaxed font-light mb-4 lg:mb-8">
               Ofrecemos un servicio puerta a puerta garantizado. Te pasamos una
               tarifa final donde está incluido todos los gastos y no vas a tener
               trámites engorrosos ni sorpresas en el camino.
-            </h3>
+            </h2>
             <button
               className="flex flex-row lg:text-base font-semibold bg-gradient-to-r from-herobutton via-herobutton to-herobutton2
                    text-white py-4 px-8 rounded-full shadow-lg"
