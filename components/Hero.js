@@ -5,7 +5,7 @@ import styles from "../styles/Hero.module.css";
 
 const Hero = () => {
   return (
-    <div className={styles.bgImg}>
+    <div className={styles.bgImg} style={{backgroundImage: 'url(/images/hero.jpg)'}}>
       <div className={styles.mask}></div>
         
         <div className="container mx-auto px-4 relative h-full flex flex-col justify-center">
