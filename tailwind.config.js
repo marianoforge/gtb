@@ -3,7 +3,9 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: [],
+  purge: {
+     content: ['./components/**/*.js', './pages/**/*.js']
+  },
   theme: {
     fontSize: {
       xs: ".75rem",
