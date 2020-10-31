@@ -5,7 +5,7 @@ import styles from "../../styles/Header.module.css";
 const Header = ({title}) => {
   return (
     <div>
-      <div className={styles.bgImg} style={{backgroundImage: 'url(/images/hero.jpg)'}}>
+      <div className={styles.bgImg}>
         <div className={styles.mask}>
             <div className="container mx-auto px-4 relative h-full flex flex-col justify-center">
               <div className="w-full pt-16">

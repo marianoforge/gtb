@@ -1,5 +1,6 @@
 .bgImg {
     /* The image used */
+    background-image: url("/images/hero.jpg");
     min-height: 300px;
 
     /* Center and scale the image nicely */
